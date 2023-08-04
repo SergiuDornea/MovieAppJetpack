@@ -54,7 +54,7 @@ fun TextItem(header : String, data : String){
 
 
 @Composable
-fun listItem(
+fun ListItemByMe(
     movie : Movie,
     onItemClick: (String) -> Unit
 ){

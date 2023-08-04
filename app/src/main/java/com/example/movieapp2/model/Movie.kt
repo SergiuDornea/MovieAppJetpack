@@ -17,7 +17,8 @@ data class Movie(
 fun getMovies(): List<Movie> {
     return listOf(
         Movie(
-            id = "tt2713180",
+//            id = "tt2713180",
+            id = "0",
             title = "Fury",
             year = "2014",
             genre = "Action, War, Drama",
@@ -36,7 +37,8 @@ fun getMovies(): List<Movie> {
         ),
 
         Movie(
-            id = "tt0120815",
+//            id = "tt0120815",
+            id = "1",
             title = "Saving Private Ryan",
             year = "1998",
             genre = "Action, War, Drama",
@@ -55,7 +57,8 @@ fun getMovies(): List<Movie> {
         ),
 
         Movie(
-            id = "tt2119532",
+//            id = "tt2119532",
+            id = "2",
             title = "Hacksaw Ridge",
             year = "2016",
             genre = "Action, War, Drama",
@@ -74,7 +77,8 @@ fun getMovies(): List<Movie> {
         ),
 
         Movie(
-            id = "tt0485985",
+//            id = "tt0485985",
+            id = "3",
             title = "Red tails",
             year = "2012",
             genre = "Action, War, Drama",
@@ -93,7 +97,8 @@ fun getMovies(): List<Movie> {
         ),
 
         Movie(
-            id = "tt5013056",
+//            id = "tt5013056",
+            id = "4",
             title = "Dunkirk",
             year = "2017",
             genre = "Action, War, Drama",
@@ -112,7 +117,8 @@ fun getMovies(): List<Movie> {
         ),
 
         Movie(
-            id = "tt1809398",
+//            id = "tt1809398",
+            id = "5",
             title = "Unbroken",
             year = "2014",
             genre = "Action, War, Drama",

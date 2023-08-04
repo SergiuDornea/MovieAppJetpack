@@ -6,6 +6,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import com.example.movieapp2.model.getMovies
 import com.example.movieapp2.screens.screen.HomeScreen
 import com.example.movieapp2.screen.details.DetailsScreen
 
@@ -27,7 +28,7 @@ fun MovieNavigation(){
             ){
             backStackEntry ->
 
-            DetailsScreen(navController = navController, backStackEntry.arguments?.getString("movie"))
+            DetailsScreen(navController = navController, backStackEntry.arguments?.getString("movie"), getMovies())
         }
     }
 }

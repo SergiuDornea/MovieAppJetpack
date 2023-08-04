@@ -11,16 +11,13 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import androidx.navigation.compose.rememberNavController
 import com.example.movieapp2.R
 import com.example.movieapp2.model.*
 import com.example.movieapp2.navigation.MovieScreens
-import com.example.movieapp2.widgets.listItem
+import com.example.movieapp2.widgets.ListItemByMe
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
@@ -51,7 +48,7 @@ fun MainContent(navController: NavController,
                 movieList: List<Movie> = getMovies() ){
     LazyColumn(modifier = Modifier.padding(top = 70.dp)){
         items(items = movieList){
-            listItem(it){movie ->
+            ListItemByMe(it){ movie ->
                 navController.navigate(route = MovieScreens.DetailsScreen.name+"/$movie ")
 
             }
